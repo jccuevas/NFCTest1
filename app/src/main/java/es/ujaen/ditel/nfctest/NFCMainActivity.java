@@ -42,7 +42,7 @@ public class NFCMainActivity extends Activity {
 		
 		IntentFilter ndef = new IntentFilter(NfcAdapter.ACTION_NDEF_DISCOVERED);
 	    try {
-	        ndef.addDataType("*/*");    /* Handles all MIME based dispatches.
+	        ndef.addDataType("text/*");    /* Handles all MIME based dispatches.
 	                                       You should specify only the ones that you need. */
 	        
 	    }
