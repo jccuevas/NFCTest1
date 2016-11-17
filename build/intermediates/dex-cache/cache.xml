@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="affcf86146aa438a009ad1cbd99855828708dd28">
+        <dex dex="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6df7ea776e1cb1d920cc03c0f463da0105570bef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidSDK\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_bf6372499ab7d9c7586f81e3c8610d4c63b58b3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="940432fc8db0f8994d11b01da9b0bfa75d7f395c">
+        <dex dex="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_76ab35fcaa3f06d36dd3c184d7404468d42e077c\classes.dex" />
+    </item>
+
+</items>

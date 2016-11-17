@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFCTest</string>
+    <string name="menu_main_about">About NFCTest</string>
+    <string name="hello_world">Data will appear here&#8230;</string>
+    <string name="nfcmain_welcome">Welcome to NFC Test Application</string>
+    <string name="nfcmain_tagdetected">NFC tag detected</string>
+    <string name="menu_main_aboutc">About</string>
+    <string name="nfctestabout_textview_footer">Telecommunication Engineering Department</string>
+    <string name="nfctastabout_about">NFCTest v1.0\r\nThis application is part of the material used for teaching purposes in several degrees in the University of Jaen.</string>
+    <string name="contentdescription_ujalogo">University of Jaen</string>
+    <string name="nfcabout_author">Author: Juan Carlos Cuevas Martínez</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFCTest</string>
+    <string name="contentdescription_ujalogo">Universidad de Jaén</string>
+    <string name="nfcabout_author">Autor: Juan Carlos Cuevas Martínez</string>
+    <string name="hello_world">Los datos saldrá aquí</string>
+    <string name="menu_main_about">Acerca de NFCTest</string>
+    <string name="menu_main_aboutc">Acerca de</string>
+    <string name="nfcmain_tagdetected">Etiqueta NFC detectada</string>
+    <string name="nfcmain_welcome">Bienvenido a la aplicación de test para NFC</string>
+    <string name="nfctastabout_about">NFCTest v1.0. Esta aplicación es parte del material docente de la asignatura de Servicios Móviles del Grado de Ingeniería Telemática de la Universidad de Jaén.</string>
+    <string name="nfctestabout_textview_footer">Departamento de Ingeniería de Telecomunicación</string>
+</resources>
