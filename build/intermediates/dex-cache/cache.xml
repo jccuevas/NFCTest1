@@ -3,30 +3,201 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="affcf86146aa438a009ad1cbd99855828708dd28">
-        <dex dex="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_6df7ea776e1cb1d920cc03c0f463da0105570bef\classes.dex" />
+        revision="24.0.2"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_246c3648e5868f36e9f792e39216658554890567\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\AndroidSDK\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
-        revision="25.0.0"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
-        <dex dex="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_bf6372499ab7d9c7586f81e3c8610d4c63b58b3f\classes.dex" />
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_88ca1b9c8f8246be92ceecc13ce0e95ca0ffad14\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="940432fc8db0f8994d11b01da9b0bfa75d7f395c">
-        <dex dex="C:\Users\Juan Carlos\Documents\Docencia\git\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_76ab35fcaa3f06d36dd3c184d7404468d42e077c\classes.dex" />
+        sha1="ab852f562aaa0e1b705d2e6eb64b620c0f7958da">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_194aadf003781edcf19d434e95c79ed6935b44b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.1_7cb2e4ad0fe3fead961dd0aafcd1dbc93a0947ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_d8cf61ab54d839adeab001e4367665eb70a10e44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_22dd9d5b6d857834b31dbcac981c22e7403fcb13\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_cc9524d40b14e6a385b88488c66fcf7291527bfa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_9ef52d951eb83da377f27ea7eca54784ff09ed7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_5f2c32006647d1e6fa5f0b9361a0f140492d6f9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="25a7eba1c0947ce9e0b3a32e8eaff1b2c7328cf9">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1e96f465dc2b38c390b2b24acf730a0db70f28c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_11f7c21edda87a720a25a8def4cfb30102b637dd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2ce1c57b55320450b5fe9ea213d6d699b7504be4">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_194aadf003781edcf19d434e95c79ed6935b44b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_3103ca68cf7da88f0c9dae9c76a095d71b89ff24\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_6f46aacf3afa6c89582f03fc48ff42122ea86bf4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_a26f16594970f1740460766c70261e1d0d84de20\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_f573c0647033537b0295fe59ff6a695d6756a43f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_a3b52c0f847bad30992e37e7ce7f49c9f3048da6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_336f9ca6262e9ab6a572252cb23013e7961eedb0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_0b5209ff00b125f7bc0d9fe3298da16dfddd08bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b6f05778f2c2b16d782d82ed8bdc52463d8c5d2d">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_1e96f465dc2b38c390b2b24acf730a0db70f28c3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_1c2d72f4878c2a94ef79a8baed8d568356344997\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\usuario\Documents\ServiciosMoviles\NFCTest1\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_7b2b573ec34ea0544953daf9ac0176c2cc39ee50\classes.dex" />
     </item>
 
 </items>

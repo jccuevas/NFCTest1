@@ -35,32 +35,42 @@ public class NFCMainActivity extends Activity {
 		statustext = (TextView) findViewById(R.id.nfcabout_departament);
 		
 		mAdapter= NfcAdapter.getDefaultAdapter(this);
-		
-		pendingIntent = PendingIntent.getActivity(
-			    this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
-		
-		
-		IntentFilter ndef = new IntentFilter(NfcAdapter.ACTION_NDEF_DISCOVERED);
-	    try {
-	        ndef.addDataType("text/*");    /* Handles all MIME based dispatches.
-	                                       You should specify only the ones that you need. */
-	        
-	    }
-	    catch (MalformedMimeTypeException e) {
-	        throw new RuntimeException("fail", e);
-	    }
-	   intentFiltersArray = new IntentFilter[] {ndef, };
-	   
-	   techListsArray = new String[][] { new String[] { NfcF.class.getName() } };
-		
+
+        iniNFCForeground();
+
+        //Muestra la tarjeta que ha hecho que se abra la aplicación
+        Intent nuevo = getIntent();
+
+        if(nuevo!=null)
+            onNewIntent(nuevo);
 
 	}
+
+    /**
+     * Inicializar el Intent para cuando la actividad captura el evento ACTION_NDEF_DISCOVERED estando en primer plano
+     */
+    private void iniNFCForeground(){
+        pendingIntent = PendingIntent.getActivity(
+                this, 0, new Intent(this, getClass()).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP), 0);
+
+        IntentFilter ndef = new IntentFilter(NfcAdapter.ACTION_NDEF_DISCOVERED);
+        try {
+            ndef.addDataType("text/*");    /* Handles all MIME based dispatches.
+	                                       You should specify only the ones that you need. */
+        }
+        catch (MalformedMimeTypeException e) {
+            throw new RuntimeException("fail", e);
+        }
+        intentFiltersArray = new IntentFilter[] {ndef, };
+
+        techListsArray = new String[][] { new String[] { NfcF.class.getName() } };
+    }
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.nfcmain, menu);
-
 		return true;
 	}
 
@@ -93,80 +103,86 @@ public class NFCMainActivity extends Activity {
 	
 
 	public void onNewIntent(Intent intent) {
-		NdefMessage msgs[];
-		int n = 0;
-		
-		String textmessages = "";
+        String result;
 		
 		if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(intent.getAction())) {
 			Parcelable[] rawMsgs = intent
 					.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
 			if (rawMsgs != null) {
-				msgs = new NdefMessage[rawMsgs.length];
-				
-				for (int i = 0; i < rawMsgs.length; i++) {
-					msgs[i] = (NdefMessage) rawMsgs[i];
-					NdefRecord ndefr[] = msgs[i].getRecords();
-					for (n = 0; n < ndefr.length; n++) {
+				result=analizaMensajes(rawMsgs);
 
-						if (ndefr[n].getTnf() == NdefRecord.TNF_MIME_MEDIA) {
-							String mimetype = new String(ndefr[n].getType());
-							String textcontent = new String(
-									ndefr[n].getPayload());
-							textmessages = textmessages + "Message MIME="
-									+ mimetype + "\r\nContent=" + textcontent
-									+ "\r\n";
-						}
 
-						if (ndefr[n].getTnf() == NdefRecord.TNF_WELL_KNOWN) {
-							String rtdtype = new String(ndefr[n].getType());
 
-							if (rtdtype.equals(new String(NdefRecord.RTD_TEXT))) {
+			}else
+                result="ERROR leyendo tarjeta NFC";
 
-								byte languagelen = (byte) ((ndefr[n]
-										.getPayload()[0]) & 0x1f);
-								String country = new String(
-										ndefr[n].getPayload(), 1, languagelen);
-								String textcontent = new String(
-										ndefr[n].getPayload(), 1 + languagelen,
-										ndefr[n].getPayload().length-1-languagelen);
+            nfctext.setText(result);
+            statustext.setText(getResources().getString(
+                    R.string.nfcmain_tagdetected));
+            nfctext.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    nfctext.setText("");
+                }
 
-								textmessages = textmessages
-										+ "Message RTD_TEXT\r\nLanguage="
-										+ country + "\r\nContent="
-										+ textcontent + "\r\n";
-							}
-						}
-					}
+            }, 10000);
+            statustext.postDelayed(new Runnable() {
 
-				}
-
-			}
-			textmessages = "Number of records=" + n + "\r\n" + textmessages;
-			nfctext.setText(textmessages);
-			statustext.setText(getResources().getString(
-					R.string.nfcmain_tagdetected));
-
-			nfctext.postDelayed(new Runnable() {
-
-				@Override
-				public void run() {
-					nfctext.setText("");
-
-				}
-
-			}, 10000);
-
-			statustext.postDelayed(new Runnable() {
-
-				@Override
-				public void run() {
-					statustext.setText("");
-
-				}
-
-			}, 5000);
+                @Override
+                public void run() {
+                    statustext.setText("");
+                }
+            }, 5000);
 
 		}
+	}
+
+	private String analizaMensajes(Parcelable[] rawMsgs){
+		NdefMessage msgs[];
+		String textmessages="";
+		int n;
+
+		msgs = new NdefMessage[rawMsgs.length];
+
+		for (int i = 0; i < rawMsgs.length; i++) {
+			msgs[i] = (NdefMessage) rawMsgs[i];
+			NdefRecord ndefr[] = msgs[i].getRecords();
+			for (n = 0; n < ndefr.length; n++) {
+
+				if (ndefr[n].getTnf() == NdefRecord.TNF_MIME_MEDIA) {
+					String mimetype = new String(ndefr[n].getType());
+					String textcontent = new String(
+							ndefr[n].getPayload());
+					textmessages = textmessages + "Message MIME="
+							+ mimetype + "\r\nContent=" + textcontent
+							+ "\r\n";
+				}
+
+				if (ndefr[n].getTnf() == NdefRecord.TNF_WELL_KNOWN) {
+					String rtdtype = new String(ndefr[n].getType());
+
+					if (rtdtype.equals(new String(NdefRecord.RTD_TEXT))) {
+
+						byte languagelen = (byte) ((ndefr[n]
+								.getPayload()[0]) & 0x1f);
+						String country = new String(
+								ndefr[n].getPayload(), 1, languagelen);
+						String textcontent = new String(
+								ndefr[n].getPayload(), 1 + languagelen,
+								ndefr[n].getPayload().length-1-languagelen);
+
+						textmessages = textmessages
+								+ "Message RTD_TEXT\r\nLanguage="
+								+ country + "\r\nContent="
+								+ textcontent + "\r\n";
+					}
+				}
+				textmessages = "Number of records=" + n + "\r\n" + textmessages;
+			}
+
+		}
+
+		return textmessages;
+
 	}
 }
