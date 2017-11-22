@@ -36,13 +36,14 @@ public class NFCMainActivity extends Activity {
 		
 		mAdapter= NfcAdapter.getDefaultAdapter(this);
 
+		//Se prepara la actividad para recibir el Intent cuando está en primer plano
         iniNFCForeground();
 
-        //Muestra la tarjeta que ha hecho que se abra la aplicación
-        Intent nuevo = getIntent();
-
-        if(nuevo!=null)
-            onNewIntent(nuevo);
+        //Si la aplicación se abre al leer una etiqueta recibirá un Intent con la información
+		// que será procesada con onNewIntent()
+        Intent nfcIntent = getIntent();
+        if(nfcIntent!=null)
+            onNewIntent(nfcIntent);
 
 	}
 
@@ -92,16 +93,19 @@ public class NFCMainActivity extends Activity {
 		 mAdapter.enableForegroundDispatch(this, pendingIntent, intentFiltersArray, techListsArray);
 
 	}
-	
-	
-	
+
+    /**
+     *
+     */
 	public void onPause() {
 	    super.onPause();
 	    mAdapter.disableForegroundDispatch(this);
 	}
 
-	
-
+    /**
+     * Procesa el Intent recibido cuando se lee una etiqueta NFC
+     * @param intent
+     */
 	public void onNewIntent(Intent intent) {
         String result;
 		
@@ -110,9 +114,6 @@ public class NFCMainActivity extends Activity {
 					.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
 			if (rawMsgs != null) {
 				result=analizaMensajes(rawMsgs);
-
-
-
 			}else
                 result="ERROR leyendo tarjeta NFC";
 
@@ -137,6 +138,11 @@ public class NFCMainActivity extends Activity {
 		}
 	}
 
+    /**
+     * Extrae el contenido de las etiquetas NFC leídas
+     * @param rawMsgs
+     * @return
+     */
 	private String analizaMensajes(Parcelable[] rawMsgs){
 		NdefMessage msgs[];
 		String textmessages="";
@@ -176,6 +182,21 @@ public class NFCMainActivity extends Activity {
 								+ country + "\r\nContent="
 								+ textcontent + "\r\n";
 					}
+                    if (rtdtype.equals(new String(NdefRecord.RTD_URI))) {
+
+                        byte languagelen = (byte) ((ndefr[n]
+                                .getPayload()[0]) & 0x1f);
+                        String country = new String(
+                                ndefr[n].getPayload(), 1, languagelen);
+                        String textcontent = new String(
+                                ndefr[n].getPayload(), 1 + languagelen,
+                                ndefr[n].getPayload().length-1-languagelen);
+
+                        textmessages = textmessages
+                                + "Message RTD_TEXT\r\nLanguage="
+                                + country + "\r\nContent="
+                                + textcontent + "\r\n";
+                    }
 				}
 				textmessages = "Number of records=" + n + "\r\n" + textmessages;
 			}
